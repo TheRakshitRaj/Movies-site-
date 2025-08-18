@@ -1,0 +1,98 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+nav {
+    background-color: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    position: sticky;   /* stays visible when scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e50914; /* red hover */
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #e50914;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-left: 5px solid #e50914;
+    padding-left: 10px;
+}
+
+/* ===== Movies Grid ===== */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* ===== Movie Card ===== */
+.movie-card {
+    background: #1c1c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.movie-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Movie Poster */
+.movie-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+}
+
+/* Movie Title */
+.movie-card p {
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #eee;
+}
