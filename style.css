@@ -96,3 +96,16 @@ h2 {
     font-weight: bold;
     color: #eee;
 }
+
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+
+nav a.active {
+  border-bottom: 3px solid red; /* underline only when active class is added */
+}
+
