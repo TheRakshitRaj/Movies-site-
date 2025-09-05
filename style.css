@@ -109,3 +109,76 @@ nav a.active {
   border-bottom: 3px solid red; /* underline only when active class is added */
 }
 
+/* Common body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Overlay for all pages */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+
+/* Different backgrounds for each page */
+body.index {
+    background-image: url("cinema.png");
+}
+body.index::before {
+    background-color: black;
+    opacity: 0.6;
+}
+
+body.action {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/049/332/218/non_2x/dramatic-scene-of-an-explosion-in-an-urban-street-with-debris-and-smoke-filling-the-air-photo.jpg");
+}
+body.action::before {
+    background-color: rgba(0,0,0,0.8);
+}
+
+body.comedy {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/538/581/large_2x/abstract-geometric-yellow-background-free-vector.jpg");
+}
+body.comedy::before {
+    background-color: rgba(0, 0, 0, 0.4); /* light overlay */
+}
+body.drama {
+    background-image: url("cinema.png");
+}
+
+body.sci-fi {
+    background-image: url("https://wallpaperaccess.com/full/250472.jpg");
+}
+body.sci-fi::before {
+    background-color: black; /* bluish overlay */
+    opacity: 0.75;
+}
+body.suspence {
+    background-image: url("https://wallpaperaccess.com/full/5851564.jpg") ;
+    
+}
+body.suspence::before {
+    background-color: black;
+    opacity: 0.1;
+}
+
+body.superhero {
+    background-image: url("bg2.png");
+}
+body.superhero::before {
+    background-color: #111;
+    opacity: 0.1;
+}
