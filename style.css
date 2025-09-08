@@ -150,7 +150,7 @@ body.action::before {
 }
 
 body.comedy {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/538/581/large_2x/abstract-geometric-yellow-background-free-vector.jpg");
+    background-image: url("https://4.bp.blogspot.com/-qoEahTAjQEg/Ud6FKsRRRnI/AAAAAAAABPU/X71q5Kig3Vk/w1200-h630-p-k-no-nu/Sky+Anime+Landscape+36.png");
 }
 body.comedy::before {
     background-color: rgba(0, 0, 0, 0.4); /* light overlay */
@@ -181,4 +181,9 @@ body.superhero {
 body.superhero::before {
     background-color: #111;
     opacity: 0.1;
+}
+
+body.period::before {
+    background-color: black;
+    opacity: 0.2;
 }
