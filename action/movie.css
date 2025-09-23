@@ -1,0 +1,71 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;  /* Black background */
+  color: #eee;
+}
+
+/* Container split */
+.movie-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Left Poster */
+.poster {
+  flex: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster img {
+  max-width: 80%;        /* reduce width (smaller image) */
+  max-height: 80%;       /* reduce height (not full screen) */
+  object-fit: cover;
+  border-radius: 10px;   /* optional: smooth corners */
+  transition: 0.3s ease; /* smooth hover effect */
+}
+
+/* Red shadow on hover */
+.poster img:hover {
+  box-shadow: 0 0 30px #e50914; /* glowing red shadow */
+  transform: scale(1.02);       /* slight zoom */
+}
+
+/* Right Info Section */
+.info {
+  margin-left: 40%;   /* leave space for poster */
+  padding: 40px;
+  height: 100vh;
+  overflow-y: auto;   /* make this section scrollable */
+  background-color: #000;
+}
+
+/* Red Highlights */
+.highlight {
+  color: #e50914;   /* Netflix-style red */
+}
+
+/* Links */
+a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Extra touch */
+ul {
+  padding-left: 20px;
+}
