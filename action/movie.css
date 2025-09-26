@@ -1,19 +1,17 @@
-/* General Page Styling */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #000;  /* Black background */
+  background-color: #000; 
   color: #eee;
 }
 
-/* Container split */
 .movie-container {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-/* Left Poster */
 .poster {
   flex: 1;
   position: fixed;
@@ -28,34 +26,32 @@ body {
 }
 
 .poster img {
-  max-width: 80%;        /* reduce width (smaller image) */
-  max-height: 80%;       /* reduce height (not full screen) */
-  object-fit: cover;
-  border-radius: 10px;   /* optional: smooth corners */
-  transition: 0.3s ease; /* smooth hover effect */
+  max-width: 80%;       
+  max-height: 80%;      
+  border-radius: 10px;   
+  transition: 0.3s ease; 
 }
 
-/* Red shadow on hover */
 .poster img:hover {
-  box-shadow: 0 0 30px #e50914; /* glowing red shadow */
-  transform: scale(1.02);       /* slight zoom */
+  box-shadow: 0 0 30px #e50914; 
+  transform: scale(1.02);       
 }
 
-/* Right Info Section */
+
 .info {
-  margin-left: 40%;   /* leave space for poster */
+  margin-left: 40%;  
   padding: 40px;
   height: 100vh;
-  overflow-y: auto;   /* make this section scrollable */
+  overflow-y: auto;   
   background-color: #000;
 }
 
-/* Red Highlights */
+
 .highlight {
-  color: #e50914;   /* Netflix-style red */
+  color: #e50914;   
 }
 
-/* Links */
+
 a {
   color: #e50914;
   text-decoration: none;
@@ -65,7 +61,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Extra touch */
+
 ul {
   padding-left: 20px;
 }
