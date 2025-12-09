@@ -65,3 +65,48 @@ a:hover {
 ul {
   padding-left: 20px;
 }
+.tag {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.tag:hover {
+  background-color: #b0060f;
+}
+
+iframe {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.highlight {
+  color: #e50914;
+}
+
+.movie-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.poster img {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.info {
+  max-width: 700px;
+  line-height: 1.6;
+}
+.back-link {
+  margin-top: 20px;   /* adds space above it */
+  margin-bottom: 60px; /* adds space below it */
+}
+
+
